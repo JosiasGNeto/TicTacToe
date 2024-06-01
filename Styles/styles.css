@@ -1,0 +1,182 @@
+/* Estilos para centrar los elementos */
+html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(45deg, #700101, #000083);
+    background-size: 400% 400%;
+    animation: degradado 15s ease infinite;
+}
+
+@keyframes degradado {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+
+#headerContainer {
+    display: flex;
+    flex-direction: column;   /* Apila los elementos en columna */
+    align-items: center;      /* Centra los elementos horizontalmente en la columna */
+    justify-content: center;  /* Centra el contenedor verticalmente */
+    height: 100%;             /* Ocupa toda la altura de la pantalla */
+    text-align: center;
+    width: 100%;
+}
+
+#title {
+    margin: 0;
+    padding: 0 0 20px 0;      /* Añade un poco de espacio entre el título y el botón */ 
+    font-family:"PT Serif", serif;
+    font-style: oblique;
+    font-size: 50px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);  /* Añade una sombra al texto */}
+
+.button {
+    padding: 6.5vh;
+    margin: 0px;
+    background-color: rgb(0, 0, 0);
+    border: 1px solid rgb(41, 26, 109);
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+}
+#start1vs1{
+    margin: 0 auto;
+    font-size: 16px;
+    padding: 30px; 
+    border-radius: 10px;
+    margin-top: 20px;
+    padding-left: 18.5vW;
+    padding-right: 18.5vW;
+    font-size: 35px;
+    font-family:"PT Serif", serif;
+    background-color: rgb(0, 0, 0);
+    border-color: rgb(41, 26, 109);
+
+}
+#start1vsIA{
+    margin: 0 auto;
+    font-size: 16px;
+    padding: 30px; 
+    border-radius: 10px;
+    margin-top: 20px;
+    padding-left: 18vw;
+    padding-right: 18vw;
+    font-size: 35px;
+    font-family:"PT Serif", serif;
+    background-color: rgb(0, 0, 0);
+    border-color: rgb(41, 26, 109);
+}
+#restartButton1vs1{
+    margin: 0 auto;
+    font-size: 16px;
+    padding: 30px; 
+    border-radius: 10px;
+    margin-top: 25vh;
+    padding-left: 15vw;
+    padding-right: 15vw;
+    font-size: 35px;
+    font-family:"PT Serif", serif;
+    background-color: rgb(0, 0, 0);
+    border-color: rgb(41, 26, 109);
+    display:none;
+}
+#restartButton1vsIA{
+    margin: 0 auto;
+    font-size: 16px;
+    padding: 30px; 
+    border-radius: 10px;
+    margin-top: 25vh;
+    padding-left: 15vw;
+    padding-right: 15vw;
+    font-size: 35px;
+    font-family:"PT Serif", serif;
+    background-color: rgb(0, 0, 0);
+    border-color: rgb(41, 26, 109);
+    display:none;
+}
+
+.button:hover {
+    background-color: rgb(41, 26, 109);
+    border: 1px solid rgb(0, 0, 0);
+    cursor: pointer;
+}
+#container {
+    width: 20%;
+    min-width: 600px;
+    margin-top: 3%;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    overflow: hidden;
+
+}
+#turno {
+    text-align: center;
+    font-size: 50px;
+    margin-top: 10px;
+    margin-bottom: 8vh;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);  
+}
+.headerButton {
+    cursor:pointer;
+    color: white;
+}
+#start1vsIA:hover, #start1vs1:hover, #restartButton1vs1:hover, #restartButton1vsIA:hover {
+    background-color: rgb(41, 26, 109);
+    border: 1px solid rgb(0, 0, 0);
+}
+#container1vs1 {
+    display: none;
+}
+#caracterPlayer1 {
+    position: fixed;
+    top: 35vh;
+    left: 6%;
+    width: 20%;
+    color: white;
+}
+#caracterPlayer2 {
+    position: fixed;
+    top: 35vh;
+    left: 80%;
+    color: white;
+}
+.containeremoticono {
+    font-size: 16px;
+    padding: 5px;
+    background-color: rgb(0, 0, 0);
+    border-color: rgb(41, 26, 109);   
+    color: white;
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 10px;
+    width: 10vw;
+    font-size:larger;
+    text-align: center;
+    margin-left: 2.5vw;
+}
+.containeremoticono:hover {
+    background-color: rgb(41, 26, 109);
+    border-color: rgb(0, 0, 0);
+}
+.containeremoticono option {
+    background-color: rgb(0, 0, 0);
+    border-color: rgb(41, 26, 109);  
+}
+.containeremoticono option:hover {
+    background-color: rgb(41, 26, 109); /* Fondo de las opciones al pasar el cursor */
+    color: rgb(41, 26, 109); /* Color del texto de las opciones al pasar el cursor */
+}
